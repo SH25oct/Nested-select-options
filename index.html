@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested select options</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="nested-form">
+        <label for="property-name">Property Name:</label>
+        <select id="property-name">
+            <option value="">Select...</option>
+        </select>
+
+        <label for="field-name" class="hidden">Field Name:</label>
+        <select id="field-name" class="hidden">
+            <option value="">Select...</option>
+        </select>
+
+        <label for="operator-name" class="hidden">Operator:</label>
+        <select id="operator-name" class="hidden">
+            <option value="">Select...</option>
+        </select>
+
+        <label for="operator-option" class="hidden">Operator Option:</label>
+        <select id="operator-option" class="hidden">
+            <option value="">Select...</option>
+        </select>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
